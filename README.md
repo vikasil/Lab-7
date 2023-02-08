@@ -30,11 +30,12 @@
 | 9 | data1.csv | 1 от 10 и 16 | ??? |
 | 10 | data2.csv | 5 | ??? |
 
+
 **Дополнительное задание**
 
 Создайте анимированный график функции y = sin(x) при помощи ```PillowWriter```.
 
-**Полезные ссылки**
+**Полезные ссылки**  
 NumPy:          https://habr.com/ru/post/352678/  
 MatPlotLib:     https://pyprog.pro/mpl/mpl_short_guide.html  
 PillowWriter:   https://matplotlib.org/stable/api/_as_gen/matplotlib.animation.PillowWriter.html  
