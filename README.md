@@ -37,5 +37,5 @@
 
 **Полезные ссылки**  
 NumPy:          https://habr.com/ru/post/352678/  
-MatPlotLib:     https://pyprog.pro/mpl/mpl_short_guide.html  
+MatPlotLib:     https://matplotlib.org/stable/users/explain/quick_start.html  
 PillowWriter:   https://matplotlib.org/stable/api/_as_gen/matplotlib.animation.PillowWriter.html  
