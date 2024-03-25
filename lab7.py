@@ -24,14 +24,14 @@ def task1():
 def task2():
     arr = pd.read_csv("data2.csv")
     plt.figure(1)
-    plt.hist(arr["Solids"], bins = 20)
+    plt.hist(arr["Solids"], bins=20)
     plt.title("histogram")
     plt.xlabel("Solids")
     plt.ylabel("quantity")
     #plt.show()
 
     plt.figure(2)
-    plt.hist(arr["Solids"], bins = 20, color = "green", density = True)
+    plt.hist(arr["Solids"], bins=20, color="green", density=True)
     plt.title("histogram2")
     plt.xlabel("Solids")
     plt.ylabel("quantity")
@@ -45,22 +45,22 @@ def task3():
     y = 1/x
     z = np.sin(x)
     fig = plt.figure()
-    ax = fig.add_subplot(111,projection = "3d")
-    ax.plot(x, y, z, label = "parametric curve")
+    ax = fig.add_subplot(111, projection="3d")
+    ax.plot(x, y, z, label="parametric curve")
    # plt.show()
 
 
-def additional_task(TimeGif):
+def additional_task():
     def update(frame):
         line.set_ydata(np.sin(x + frame / 8))
         return line,
     fig, ax = plt.subplots()
     x = np.arange(0, 2 * np.pi, 0.01)
     line, = ax.plot(x, np.sin(x))
-    ani = FuncAnimation(fig, update, frames = 50 * TimeGif, blit = True)
-    writer = PillowWriter(fps = 50)
+    ani = FuncAnimation(fig, update, frames=150, blit=True)
+    writer = PillowWriter(fps=50)
     plt.show()
-    ani.save("y=sin(x).gif", writer = writer)
+    ani.save("y=sin(x).gif", writer=writer)
 
 if __name__ == "__main__":
     task1()
@@ -68,6 +68,5 @@ if __name__ == "__main__":
     task3()
     print("Пожалуйста, не закрывайте программу!")
     print("Идёт запись гифки!")
-    TimeGif = 3
-    additional_task(TimeGif)
+    additional_task()
     print("Гифка сохранена")
